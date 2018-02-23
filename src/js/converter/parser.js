@@ -222,10 +222,7 @@ var processBlock = function(element, defs, themeUpdater, blockPusher, templateUr
     } else {
       var width = domutils.getAttribute(element, 'width');
       if (width === '') width = null;
-      if (width === null) {
-        console.error("ERROR: data-ko-editable images must declare a WIDTH attribute!", element);
-        throw "ERROR: data-ko-editable images must declare a WIDTH attribute!";
-      }
+
       var height = domutils.getAttribute(element, 'height');
       if (height === '') height = null;
 
